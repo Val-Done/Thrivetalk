@@ -7,7 +7,7 @@
 // Style for Header
 .header {
   height: 100vh;
-  
+
   background: #f4f9e2 no-repeat;
   background-size: 40% 50%;
 
@@ -35,9 +35,7 @@
   }
   &__main {
     grid-area: 2/1/3/3;
-    margin:190px 0 0 180px;
-    
-     
+    margin: 190px 0 0 180px;
   }
   &__main-title {
     @extend%title-text;
@@ -45,7 +43,7 @@
     line-height: 45px;
     letter-spacing: -0.035;
     color: #22356f;
-    margin-top: 45px
+    margin-top: 45px;
   }
   &__main-text {
     @extend%title-block;
