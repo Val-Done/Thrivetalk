@@ -1,0 +1,21 @@
+// Section about
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 60% 40%);
+  margin-top: 40px;
+
+  .about__wrapp {
+  }
+  .about__title-top {
+  }
+  .about__top-text {
+  }
+  .about__img {
+  }
+  .about__title-bottom {
+  }
+  .about__bottom-text {
+  }
+  .about-link {
+  }
+}
