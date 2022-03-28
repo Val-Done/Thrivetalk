@@ -1,21 +1,90 @@
 // Section about
 .about {
-  display: grid;
-  grid-template-columns: repeat(2, 60% 40%);
-  margin-top: 40px;
+  &__wrapp {
+    display: grid;
+    grid-template-columns: repeat(2, 65% 35%);
+    grid-auto-rows: minmax(auto, auto);
+  }
+  &__top-title {
+    @extend%title-text;
+    color: #ffffff;
 
-  .about__wrapp {
+    font-size: 36px;
+    font-style: normal;
+    line-height: 23px;
+    letter-spacing: -0.006em;
+    margin: 151px 0 122px 0px;
   }
-  .about__title-top {
+  &__top-text {
+    background-image: url(../images/about/bgblue.svg);
+    background-size: cover;
   }
-  .about__top-text {
+
+  &__img {
+    background-image: url("../images/about/about_img.svg");
+    background-repeat: no-repeat;
+    background-size: 525px 604px;
+    // object-fit: cover;
+    // max-width: 100%;
+    // max-height: 100%;
   }
-  .about__img {
+  .about__text-wrapp {
+    margin: 0 186px 65px 180px;
   }
-  .about__title-bottom {
+
+  .top {
+    &__text-bold {
+      @extend%title-text;
+      font-style: normal;
+      font-style: 24px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+
+    &__text-small {
+      // margin: 0 180px 95px 180px;
+      font-family: "Larsseit";
+      font-weight: 400, Regular;
+      font-style: normal;
+      font-style: 16px;
+      line-height: 28px;
+      color: #ffffff;
+    }
   }
-  .about__bottom-text {
+  &__bottom-wrapp {
+    display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // min-width: 365px;
   }
-  .about-link {
+  &__bottom-title {
+    font-family: Larsseit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    width: 740px;
+    margin: 150px 0 0 106px;
+  }
+  &__bottom-text {
+    font-family: Larsseit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    margin: 150px 467px 51px 190px;
+  }
+  &__wrapp-link {
+    font-family: Larsseit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+
+    text-align: center;
   }
 }
