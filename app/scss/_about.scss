@@ -1,9 +1,13 @@
 // Section about
 .about {
-  &__wrapp {
-    display: grid;
-    grid-template-columns: repeat(2, 65% 35%);
-    grid-auto-rows: minmax(auto, auto);
+  display: grid;
+  grid-template-columns: repeat(2, 65% 35%);
+  grid-template-rows: repeat(3);
+  grid-auto-rows: minmax(auto, auto);
+  &__wrapper {
+    // display: grid;
+    // grid-template-columns: repeat(2, 65% 35%);
+    // grid-auto-rows: minmax(auto, auto);
   }
   &__top-title {
     @extend%title-text;
@@ -21,15 +25,12 @@
   }
 
   &__img {
-    background-image: url("../images/about/about_img.svg");
-    background-repeat: no-repeat;
-    background-size: 525px 604px;
-    // object-fit: cover;
-    // max-width: 100%;
-    // max-height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
   }
-  .about__text-wrapp {
-    margin: 0 186px 65px 180px;
+  .about__text-wrapper {
+    margin: 0 186px 42px 180px;
   }
 
   .top {
@@ -51,7 +52,11 @@
       color: #ffffff;
     }
   }
-  &__bottom-wrapp {
+  &__bottom-wrapper {
+    height: 361px;
+    width: 1440px;
+    background: #ffffff;
+
     display: flex;
     // justify-content: space-between;
     // align-items: center;
